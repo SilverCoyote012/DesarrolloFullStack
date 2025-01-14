@@ -1,0 +1,12 @@
+*{
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+#about_us {
+    display: flex;
+}
+
+#proyectos {
+    display: flex;
+}
