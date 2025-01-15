@@ -7,12 +7,13 @@
 
     <link rel="stylesheet" href="./styles.css">
     <!-- Iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header id="menu">
         <nav>
             <ul>
+                <img src="./img/bars-solid.svg" alt="">
                 <li><a href="#encabezado">Empresa</a></li>
                 <li><a href="#about_us">About Us</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
@@ -80,9 +81,9 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque soluta perferendis sapiente velit id suscipit ea cupiditate alias pariatur architecto?</p>
         </div>
         <div id="formulario">
-            <input type="text" placeholder="Nombre">
-            <input type="email" placeholder="Correo">
-            <input type="text" placeholder="Mensaje">
+            <input type="text" placeholder="Nombre", required, pattern="^[a-z\s]{1,}$">
+            <input type="email" placeholder="Correo", required, pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.+[A-Z]{2,4}$">
+            <input type="text" placeholder="Mensaje", required, pattern="^[^&'¬%$]*$">
             <button>Enviar</button>
         </div>
     </div>
