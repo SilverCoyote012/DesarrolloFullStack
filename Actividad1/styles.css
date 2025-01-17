@@ -11,447 +11,361 @@ body {
     overflow-x: hidden;
 }
 
-@media (min-width: 1024px) {
-    /* MENU */
-    
-    #menu {
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        height: 70px;
-        background-color: white;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-    
-    #menu ul {
-        display: flex;
-        list-style: none;
-        margin-right: 20px;
-    }
-    
-    #menu ul li {
-        border-radius: 10px;
-        margin: 0 10px;
-    }
-    
-    #menu ul li a {
-        text-decoration: none;
-        color: black;
-        margin: 10px;
-        padding: 10px 20px;
-    }
+/* MENU */
 
-    #menu nav ul img {
-        opacity: 0;
-        width: 10px;
-    }
-    
-    #menu ul li a:hover {
-        background-color: #f1f0f0;
-        margin: 10px;
-        padding: 10px 20px;
-        border-radius: 10px;
-    }
-    
-    /* EMPRESA */
-    
-    #empresa {
-        background-color: white;
-        padding: 20px;
-        border-radius: 10px;
-        margin-top: 10px;
-        text-align: center;
-    }
-    
-    #empresa h1 {
-        margin: 10px 0;
-    }
-    
-    #empresa h2 {
-        margin: 10px 0;
-    }
-    
-    /* VALORES */
-    
-    #about_us {
-        margin: 10px 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-    }
-    
-    #mision, #vision, #valores {
-        text-align: center;
-        background-color: white;
-        padding: 20px;
-        border-radius: 10px;
-    }
-    
-    #vision {
-        margin: 0 10px;
-    }
-    
-    #mision h3, #vision h3, #valores h3 {
-        margin: 10px 0;
-    }
-    
-    #mision h4, #vision h4, #valores h4 {
-        margin: 30px 5px;
-    }
-    
-    /* PROYECTOS */
-    
-    #proyectos {
-        margin: 10px 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-    }
-    
-    .proyecto {
-        /* SOLUCIONAR MARGEN DE DERECHA E IZQUIERDA DE TODOS LOS PROYECTOS */
-        margin: 0px 10px 0px 10px;
-        padding: 20px;
-        border-radius: 10px;
-        background-color: white;
-    }
-    
-    .proyecto img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 10px;
-    }
-    
-    .proyecto h1 {
-        margin: 15px 0;
-    }
-    
-    .proyecto h2 {
-        margin: 15px 0;
-    }
-    
-    .proyecto button {
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        background-color: #f1f0f0;
-        cursor: pointer;
-    }
-    
-    .proyecto button:hover {
-        text-decoration: underline;
-    }
-    
-    /* CONTACTO */
-    
-    #contacto {
-        background-color: white;
-        padding: 30px 60px;
-        border-radius: 10px;
-        margin-top: 10px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-    }
-    
-    #tituloContacto {
-        margin: 10px 200px;
-        width: 50%;
-    }
-    
-    #formulario {
-        width: 50%;
-    }
-    
-    #formulario input {
-        width: 100%;
-        padding: 20px;
-        margin: 10px 0;
-        border-radius: 5px;
-        border: 1px solid gray;
-    }
-    
-    #formulario button {
-        padding: 15px 30px;
-        border: none;
-        border-radius: 5px;
-        background-color: #f1f0f0;
-        cursor: pointer;
-    }
-    
-    input:invalid:is(:focus):not(:placeholder-shown){
-        background: rgba(255, 0, 0, 0.274);
-    }
-    
-    /* FOOTER */
-    
-    #footer {
-        background-color: gray;
-        padding: 20px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        margin-top: 10px;
-        text-align: center;
-    }
-    
-    #redes {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-    }
-    
-    #redes a {
-        text-decoration: none;
-        color: white;
-        margin: 10px;
-    }
-    
-    #redes i {
-        font-size: 30px;
-    }
-    
-    #datosContacto {
-        margin-top: 10px;
-        text-align: center;
-        color: white;
-        font-size: large;
-    }
-    
-    #datosContacto p {
-        margin: 5px 0;
-    }
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 15px;
+}
+
+#menu ul {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+}
+
+#menu ul li {
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+#menu nav ul img {
+    width: 50px;
+    height: 50px;
+    margin-top: -18px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#menu ul li a:hover {
+    background-color: #f1f0f0;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#encabezado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* EMPRESA */
+
+#empresa {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#empresa h1 {
+    margin: 10px 0;
+}
+
+#empresa h2 {
+    margin: 10px 0;
+}
+
+/* VALORES */
+
+#about_us {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#mision, #vision, #valores {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#vision {
+    margin: 0 10px;
+}
+
+#mision h3, #vision h3, #valores h3 {
+    margin: 10px 0;
+}
+
+#mision h4, #vision h4, #valores h4 {
+    margin: 30px 5px;
+    font-weight: 100;
+}
+
+/* PROYECTOS */
+
+#proyectos {
+    margin: 0px -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.proyecto {
+    margin: 0px 5px 0px 5px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.proyecto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.proyecto h1 {
+    margin: 15px 0;
+}
+
+.proyecto h2 {
+    margin: 15px 0;
+    font-weight: 100;
+}
+
+.proyecto button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f0f0;
+    cursor: pointer;
+}
+
+.proyecto button:hover {
+    text-decoration: underline;
+}
+
+/* CONTACTO */
+
+#contacto {
+    background-color: white;
+    padding: 50px 250px;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px 0;
+}
+
+#tituloContacto {
+    width: 50%;
+    margin-right: 50px;
+}
+
+#formulario {
+    width: 50%;
+    margin-left: 50px;
+}
+
+#formulario textarea{
+    height: 100px;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+#formulario input, textarea {
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+#formulario button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f0f0;
+    cursor: pointer;
+}
+
+input:invalid:is(:focus):not(:placeholder-shown){
+    background: rgba(255, 0, 0, 0.274);
+}
+
+/* FOOTER */
+
+#footer {
+    background-color: gray;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#redes a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+
+#redes i {
+    font-size: 30px;
+}
+
+#datosContacto {
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: large;
+}
+
+#datosContacto p {
+    margin: 5px 0;
 }
 
 /* RESPONSIVE TABLET */
 
-@media (max-width: 1023px) and (min-width: 768px) {
-    /* MENU */
-    
-    #menu {
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        height: 70px;
-        background-color: white;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
+@media (max-width: 1024px) and (min-width: 820px) {
+    #about_us {
+        margin-top: 5px;
+        flex-direction: column;
+    }
+
+    #mision, #vision, #valores {
+        padding: 20px;
+        margin: 5px 0;
+    }
+
+    #proyectos {
+        flex-direction: column;
+        margin: -5px 0;
+    }
+
+    .proyecto {
+        margin: 5px 0;
+    }
+
+    #contacto {
+        padding: 50px 100px;
+    }
+
+    #tituloContacto {
+        width: 50%;
+        margin-right: 50px;
     }
     
-    
+    #formulario {
+        width: 50%;
+        margin-left: 50px;
+    }
+}
 
+@media (max-width: 819px) {
+    #menu {
+        height: 100%;
+    }
     #menu ul {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         list-style: none;
-        margin-right: 20px;
+        margin: 0;
+        padding: 0;
     }
     
     #menu ul li {
         border-radius: 10px;
-        margin: 0 10px;
+        margin: 0;
+        padding: 0;
     }
     
     #menu ul li a {
         text-decoration: none;
         color: black;
-        margin: 10px;
-        padding: 10px 20px;
+        margin: 0;
+        padding: 0;
     }
 
-    #menu ul img {
-        width: 10px;
-    }
-    
     #menu ul li a:hover {
-        background-color: #f1f0f0;
-        margin: 10px;
-        padding: 10px 20px;
-        border-radius: 10px;
-    }
-    
-    /* EMPRESA */
-    
-    #empresa {
         background-color: white;
-        padding: 20px;
-        border-radius: 10px;
-        margin-top: 10px;
-        text-align: center;
+        padding: 0;
     }
     
-    #empresa h1 {
-        margin: 10px 0;
+    #logo {
+        display: none;
     }
     
-    #empresa h2 {
-        margin: 10px 0;
+    #menu ul li {
+        margin: 20px;
     }
-    
-    /* VALORES */
-    
+
     #about_us {
-        margin: 10px 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-    }
-    
-    #mision, #vision, #valores {
-        text-align: center;
-        background-color: white;
-        padding: 20px;
-        border-radius: 10px;
-    }
-    
-    #vision {
-        margin: 0 10px;
-    }
-    
-    #mision h3, #vision h3, #valores h3 {
-        margin: 10px 0;
-    }
-    
-    #mision h4, #vision h4, #valores h4 {
-        margin: 30px 5px;
-    }
-    
-    /* PROYECTOS */
-    
-    #proyectos {
-        margin: 10px 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        margin-top: 5px;
         flex-direction: column;
     }
-    
-    .proyecto {
-        /* SOLUCIONAR MARGEN DE DERECHA E IZQUIERDA DE TODOS LOS PROYECTOS */
-        margin: 0px 0px 10px 0px;
+
+    #mision, #vision, #valores {
         padding: 20px;
-        border-radius: 10px;
-        background-color: white;
+        margin: 5px 0;
     }
-    
-    .proyecto img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 10px;
+
+    #proyectos {
+        flex-direction: column;
+        margin: -5px 0;
     }
-    
-    .proyecto h1 {
-        margin: 15px 0;
+
+    .proyecto {
+        margin: 5px 0;
     }
-    
-    .proyecto h2 {
-        margin: 15px 0;
-    }
-    
-    .proyecto button {
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        background-color: #f1f0f0;
-        cursor: pointer;
-    }
-    
-    .proyecto button:hover {
-        text-decoration: underline;
-    }
-    
-    /* CONTACTO */
-    
+
     #contacto {
-        background-color: white;
-        padding: 30px 0px;
-        border-radius: 10px;
-        margin-top: 10px;
+        padding: 50px 0;
+        flex-direction: column;
         text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
     }
-    
+
+    #contacto h1 {
+        margin: 10px 0;
+    }
+
     #tituloContacto {
-        width: 40%;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
     }
     
     #formulario {
         margin: 30px;
-        width: 35%;
     }
-    
-    #formulario input {
-        width: 100%;
-        padding: 20px;
-        margin: 10px 0;
-        border-radius: 5px;
-        border: 1px solid gray;
-    }
-    
-    #formulario button {
-        padding: 15px 30px;
-        border: none;
-        border-radius: 5px;
-        background-color: #f1f0f0;
-        cursor: pointer;
-    }
-    
-    input:invalid:is(:focus):not(:placeholder-shown){
-        background: rgba(255, 0, 0, 0.274);
-    }
-    
-    /* FOOTER */
-    
-    #footer {
-        background-color: gray;
-        padding: 20px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        margin-top: 10px;
-        text-align: center;
-    }
-    
-    #redes {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-    }
-    
-    #redes a {
-        text-decoration: none;
-        color: white;
-        margin: 10px;
-    }
-    
-    #redes i {
-        font-size: 30px;
-    }
-    
-    #datosContacto {
-        margin-top: 10px;
-        text-align: center;
-        color: white;
-        font-size: large;
-    }
-    
-    #datosContacto p {
-        margin: 5px 0;
-    }
-}
-
-/* RESPONSIVE CELULAR */
-
-@media (max-width: 767px) {
-
 }
