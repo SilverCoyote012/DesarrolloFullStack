@@ -1,91 +1,87 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f1f0f0;
-    margin: 0 20px;
+    font-family: sans-serif;
+    background-color: white;
     overflow-x: hidden;
+    width: 1900px;
+    margin: 0 auto;
 }
 
-/* MENU */
+header {
+    background-color: #f4f4f4;
+    color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 0px 10px;
+}
 
-#menu {
+nav ul {
+    list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
-    background-color: white;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding-top: 15px;
 }
 
-#menu ul {
-    display: flex;
-    list-style: none;
-    margin-right: 20px;
+nav ul a {
+    margin: 0 30px;
 }
 
-#menu ul li {
-    border-radius: 10px;
-    margin: 0 10px;
-}
-
-#menu ul li a {
-    text-decoration: none;
+nav ul li a {
     color: black;
-    margin: 10px;
-    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    font-weight: 500;
 }
 
-#menu nav ul img {
-    width: 50px;
-    height: 50px;
-    margin-top: -18px;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-#menu ul li a:hover {
-    background-color: #f1f0f0;
-    margin: 10px;
-    padding: 10px 20px;
+nav ul li a:hover {
+    background-color: white;
     border-radius: 10px;
+}
+
+#logo img {
+    height: 50px;
+    width: auto;
 }
 
 #encabezado {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 10px;
+}
+
+#empresa {
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-/* EMPRESA */
-
-#empresa {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 10px;
+    background: #f4f4f4;
+    padding: 50px 200px 50px 200px;
+    border-radius: 20px;
     text-align: center;
 }
 
 #empresa h1 {
-    margin: 10px 0;
+    font-size: 50px;
+    margin-bottom: 20px;
 }
 
 #empresa h2 {
-    margin: 10px 0;
+    font-size: 30px;
+    font-weight: lighter;
 }
 
-/* VALORES */
-
 #about_us {
-    margin: 10px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,118 +89,145 @@ body {
 }
 
 #mision, #vision, #valores {
-    text-align: center;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    width: calc(100% / 3);
+    height: 220px;
+    margin-top: 10px;
+    background: #f4f4f4;
+    padding: 30px 50px;
 }
 
 #vision {
-    margin: 0 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #mision h3, #vision h3, #valores h3 {
-    margin: 10px 0;
+    margin-bottom: 10px;
+    font-size: 30px;
 }
 
 #mision h4, #vision h4, #valores h4 {
-    margin: 30px 5px;
-    font-weight: 100;
+    font-size: 20px;
+    font-weight: lighter;
 }
-
-/* PROYECTOS */
 
 #proyectos {
-    margin: 0px -5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-
-.proyecto {
-    margin: 0px 5px 0px 5px;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: white;
     display: flex;
     justify-content: center;
     align-items: start;
+    flex-direction: row;
+    margin-top: 10px;
+    border-radius: 20px;
+    margin: 0 5px;
+}
+
+.proyecto {
+    display: flex;
+    justify-content: start;
+    align-items: start;
     flex-direction: column;
+    border-radius: 20px;
+    width: calc(100% / 5);
+    background: #f4f4f4;
+    padding: 30px 30px;
+    margin: 0 5px;
+    padding-bottom: 110px;
+    max-height: 410px;
 }
 
 .proyecto img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
+    height: 180px;
+    border-radius: 20px;
+    margin-bottom: 10px;
 }
 
 .proyecto h1 {
-    margin: 15px 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    min-height: 40px;
 }
 
 .proyecto h2 {
-    margin: 15px 0;
-    font-weight: 100;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: lighter;
+    min-height: 50px;
 }
 
 .proyecto button {
+    background-color: #f4f4f4;
+    color: black;
     padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #f1f0f0;
+    border-radius: 10px;
     cursor: pointer;
 }
 
 .proyecto button:hover {
-    text-decoration: underline;
+    background-color: white;
 }
 
-/* CONTACTO */
-
 #contacto {
-    background-color: white;
-    padding: 50px 250px;
-    border-radius: 10px;
-    margin-top: 10px;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin: 10px 0;
+    background: #f4f4f4;
+    padding: 50px 300px 50px 300px;
+    border-radius: 20px;
+    margin: 10px;
 }
 
 #tituloContacto {
+    margin-bottom: 20px;
     width: 50%;
-    margin-right: 50px;
+}
+
+#tituloContacto h1 {
+    font-size: 30px;
+}
+
+#tituloContacto p {
+    font-size: 20px;
 }
 
 #formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
     width: 50%;
-    margin-left: 50px;
+    background: #f4f4f4;
+    padding: 30px 50px;
 }
 
-#formulario textarea{
-    height: 100px;
-    max-width: 100%;
-    min-width: 100%;
-}
-
-#formulario input, textarea {
+#formulario input {
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid gray;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+#formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    max-width: 100%;
 }
 
 #formulario button {
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    background-color: #f1f0f0;
+    background-color: #f4f4f4;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
@@ -212,15 +235,21 @@ input:invalid:is(:focus):not(:placeholder-shown){
     background: rgba(255, 0, 0, 0.274);
 }
 
-/* FOOTER */
+#formulario button:hover {
+    background-color: white;
+}
+
 
 #footer {
-    background-color: gray;
-    padding: 20px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    margin-top: 10px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background: gray;
+    padding: 50px 300px 50px 300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin: 0 10px;
 }
 
 #redes {
@@ -228,144 +257,279 @@ input:invalid:is(:focus):not(:placeholder-shown){
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    margin-right: 50px;
 }
 
 #redes a {
-    text-decoration: none;
-    color: white;
-    margin: 10px;
+    margin: 0 10px;
 }
 
-#redes i {
-    font-size: 30px;
+#redes a i {
+    font-size: 40px;
+    color: white;
 }
 
 #datosContacto {
-    margin-top: 10px;
-    text-align: center;
-    color: white;
-    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #datosContacto p {
-    margin: 5px 0;
+    margin: 0 10px;
+    font-size: 20px;
+    color: white;
 }
 
-/* RESPONSIVE TABLET */
+
+
+@media (max-width: 1280px) and (min-width: 1025px) {
+    body {
+        font-family: sans-serif;
+        background-color: white;
+        overflow-x: hidden;
+        width: 1280px;
+        margin: 0 auto;
+    }
+
+    #mision, #vision, #valores {
+        height: 330px;
+    }
+
+    .proyecto {
+        max-height: 400px;
+    }
+
+    .proyecto h1 {
+        margin-bottom: 10px;
+        min-height: 50px;
+    }
+
+    .proyecto h2 {
+        margin-bottom: 20px;
+        min-height: 90px;
+    }
+
+    #contacto {
+        padding: 50px 150px 50px 150px;
+    }
+}
+
+
 
 @media (max-width: 1024px) and (min-width: 820px) {
-    #about_us {
-        margin-top: 5px;
-        flex-direction: column;
+    body {
+        font-family: sans-serif;
+        background-color: white;
+        overflow-x: hidden;
+        width: 1000px;
+        margin: 0 auto;
     }
 
     #mision, #vision, #valores {
-        padding: 20px;
-        margin: 5px 0;
+        height: 340px;
     }
 
-    #proyectos {
-        flex-direction: column;
-        margin: -5px 0;
+    .proyecto h1 {
+        margin-bottom: 10px;
+        min-height: 65px;
     }
 
-    .proyecto {
-        margin: 5px 0;
+    .proyecto h2 {
+        margin-bottom: 20px;
+        min-height: 130px;
     }
 
     #contacto {
-        padding: 50px 100px;
+        flex-direction: column;
+        padding: 50px 100px 50px 100px;
     }
-
+    
     #tituloContacto {
-        width: 50%;
-        margin-right: 50px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    #tituloContacto h1 {
+        font-size: 30px;
+    }
+    
+    #tituloContacto p {
+        font-size: 20px;
     }
     
     #formulario {
-        width: 50%;
-        margin-left: 50px;
+        width: 100%;
+    }
+
+    #footer {
+        padding: 50px 200px 50px 200px;
     }
 }
 
-@media (max-width: 819px) {
-    #menu {
-        height: 100%;
-    }
-    #menu ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-    
-    #menu ul li {
-        border-radius: 10px;
-        margin: 0;
-        padding: 0;
-    }
-    
-    #menu ul li a {
-        text-decoration: none;
-        color: black;
-        margin: 0;
-        padding: 0;
+@media (max-width: 819px) and (min-width: 640px) {
+    body {
+        font-family: sans-serif;
+        background-color: white;
+        overflow-x: hidden;
+        width: 820px;
+        margin: 0 auto;
     }
 
-    #menu ul li a:hover {
-        background-color: white;
-        padding: 0;
-    }
-    
-    #logo {
-        display: none;
-    }
-    
-    #menu ul li {
-        margin: 20px;
+    #empresa {
+        padding: 50px;
     }
 
     #about_us {
-        margin-top: 5px;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0px;
+        margin: 5px -15px;
     }
 
-    #mision, #vision, #valores {
-        padding: 20px;
-        margin: 5px 0;
+    #mision {
+        width: calc(50% - 20px);
+        margin: 5px 0px;
+        margin-right: 10px;
+        height: 270px;
+    }
+
+    #vision {
+        width: calc(50% - 20px);
+        margin: 5px 0px;
+        height: 270px;
+    }
+
+    #valores {
+        width: calc(100% - 30px);
+        margin-top: 5px;
     }
 
     #proyectos {
-        flex-direction: column;
-        margin: -5px 0;
+        margin-top: -10px;
+        margin-bottom: -5px;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .proyecto {
-        margin: 5px 0;
+        width: calc(50% - 10px);
+        margin: 5px;
     }
 
     #contacto {
-        padding: 50px 0;
         flex-direction: column;
+        padding: 50px 100px 50px 100px;
+    }
+    
+    #tituloContacto {
+        width: 100%;
         text-align: center;
     }
-
-    #contacto h1 {
-        margin: 10px 0;
+    
+    #tituloContacto h1 {
+        font-size: 30px;
     }
-
-    #tituloContacto {
-        margin: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
+    
+    #tituloContacto p {
+        font-size: 20px;
     }
     
     #formulario {
-        margin: 30px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 639px) {
+    body {
+        font-family: sans-serif;
+        background-color: white;
+        overflow-x: hidden;
+        width: 640px;
+        margin: 0 auto;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul a {
+        margin: 5px 0px;
+    }
+
+    nav ul li {
+        margin: 5px 0px;
+    }
+
+    #empresa {
+        padding: 50px;
+    }
+
+    #about_us {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0px;
+        margin: 5px -15px;
+    }
+
+    #mision {
+        width: calc(50% - 20px);
+        margin: 5px 0px;
+        margin-right: 10px;
+        height: 300px;
+    }
+
+    #vision {
+        width: calc(50% - 20px);
+        margin: 5px 0px;
+        height: 300px;
+    }
+
+    #valores {
+        width: calc(100% - 30px);
+        margin-top: 5px;
+    }
+
+    #proyectos {
+        margin-top: -10px;
+        margin-bottom: -5px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .proyecto {
+        width: calc(50% - 10px);
+        margin: 5px;
+    }
+
+    #contacto {
+        flex-direction: column;
+        padding: 50px 50px 50px 50px;
+    }
+    
+    #tituloContacto {
+        width: 100%;
+        text-align: center;
+    }
+    
+    #tituloContacto h1 {
+        font-size: 30px;
+    }
+    
+    #tituloContacto p {
+        font-size: 20px;
+    }
+    
+    #formulario {
+        width: 100%;
+    }
+
+    #footer {
+        padding: 50px 0;
     }
 }
