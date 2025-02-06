@@ -1,5 +1,5 @@
 const express = require('express');
-const { getTasks, getTask, updateTask, createTask, deleteTask } = require('../readFiles');
+const { getTasks, getTask, updateTask, createTask, deleteTask } = require('../src/readFiles');
 const router = express.Router();
 
 router.get('/', (req, res) => {
