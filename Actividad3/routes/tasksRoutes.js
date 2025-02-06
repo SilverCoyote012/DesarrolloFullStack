@@ -75,6 +75,7 @@ router.post('/tasks', async (req, res, next) => {
 router.delete('/tasks/:id', async (req, res, next) => {
     try {
         const task = await getTask(parseInt(req.params.id));
+
         if (task) {
             await deleteTask(parseInt(req.params.id));
             res.json(task);
