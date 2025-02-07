@@ -35,7 +35,6 @@ async function deleteTask(id) {
     await fs.writeFile('tasks.json', JSON.stringify(tasks, null, 4));
 }
 
-
 module.exports = {
     getTasks,
     getTask,

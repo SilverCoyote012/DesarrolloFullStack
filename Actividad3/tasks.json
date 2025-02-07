@@ -10,5 +10,23 @@
         "title": "Tarea 2",
         "description": "Descripción de la tarea 2",
         "status": "completada"
+    },
+    {
+        "id": 3,
+        "title": "Tarea 3",
+        "description": "Descripción de la tarea 3",
+        "status": "pendiente"
+    },
+    {
+        "id": 4,
+        "title": "Tarea 4",
+        "description": "Descripción de la tarea 4",
+        "status": "completada"
+    },
+    {
+        "id": 5,
+        "title": "Tarea 5",
+        "description": "Descripción de la tarea 5",
+        "status": "pendiente"
     }
 ]
