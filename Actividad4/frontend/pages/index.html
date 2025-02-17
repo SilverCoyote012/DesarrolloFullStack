@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+
+    <!-- Remember to include jQuery :) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <button id="clearStorage" class="clear-storage-btn">Cerrar Sesion</button>
+    <div id="createProductContainer">
+        <a href="#createProductPopout" rel="modal:open"><button id="createProductButton">Crear Producto</button></a>
+    </div>
+
+
+    <div id="createProductPopout" class="modal">
+        <h2>Crear Producto</h2>
+        <form method="POST">
+            <p id="error"></p>
+            <input id="name" type="text" name="name" placeholder="Nombre">
+            <input id="description" type="text" name="description" placeholder="Descripcion">
+            <input id="price" type="number" name="price" placeholder="Precio">
+            <button id="createProduct">Crear</button>
+        </form>
+        <a hidden id="closeModal" href="#" rel="modal:close"></a>
+    </div>
+
+    <div id="editProductPopout" class="modal">
+        <h2>Editar Producto</h2>
+        <form method="POST">
+            <p id="editError"></p>
+            <input id="editProductId" name="id" placeholder="ID" hidden>
+            <input id="editName" type="text" name="name" placeholder="Nombre">
+            <input id="editPrice" type="number" name="price" placeholder="Precio">
+            <input id="editDescription" type="text" name="description" placeholder="Descripcion">
+            <button id="editProduct">Confirmar</button>
+        </form>
+        <a hidden id="closeEditModal" href="#" rel="modal:close"></a>
+    </div>
+
+    <div id="productContainer" class="productContainer">
+
+    </div>
+
+    <script>
+        document.getElementById('clearStorage').addEventListener('click', () => {
+            localStorage.clear();
+            alert('Sesión borrada. Por favor, inicia sesión nuevamente.');
+
+            window.location.href = './login.html';
+        });
+    </script>
+
+    <script src="../scripts/products.js"></script>
+</body>
+</html>

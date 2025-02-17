@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../styles/register.css">
+</head>
+<body>
+    <div class="register-container">
+        <h1>DOWNMOVILE</h1>
+        <h1>Registrarse</h1>
+        <form class="register-form" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="nameRegister" name="name" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="emailRegister" name="email" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="passwordRegister" name="password" required>
+
+            <button id="register" type="submit">Registrarse</button>
+        </form>
+
+        <button class="login-btn" onclick="window.location.href='./login.html'">Iniciar Sesión</button>
+
+        <p id="messageRegister"></p>
+    </div>
+
+    <script src="../scripts/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../styles/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>DOWNMOVILE</h1>
+        <h1>Iniciar Sesion</h1>
+        <form class="login-form" method="post">
+            <label for="email">Correo electrónico o número de celular:</label>
+            <input type="email" id="emailLogin" name="email" required>
+            
+            <label for="password">Contraseña:</label>
+            <input type="password" id="passwordLogin" name="password" required>
+            
+            <button id="login" type="submit">Iniciar Sesion</button>
+        </form>
+
+        <button class="register-btn" onclick="window.location.href='./register.html'">Registrarse</button>
+
+        <p id="messageLogin"></p>
+    </div>
+
+    <script src="../scripts/login.js"></script>
+</body>
+</html>

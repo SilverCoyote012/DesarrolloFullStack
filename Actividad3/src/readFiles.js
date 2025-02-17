@@ -17,6 +17,8 @@ async function getTask(id) {
 async function updateTask(id, task) {
     const tasks = await getTasks();
     const index = tasks.findIndex(task => task.id === id);
+    task = { id: index+1, ...task };
+    tasks.splice(index, 1, task)
     await fs.writeFile('tasks.json', JSON.stringify(tasks, null, 4));
 }
 

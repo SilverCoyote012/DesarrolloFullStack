@@ -17,6 +17,8 @@ async function getUser(id) {
 async function updateUser(id, user) {
     const users = await getUsers();
     const index = users.findIndex(user => user.id === id);
+    user = { id: index+1, ...user };
+    users.splice(index, 1, user)
     await fs.writeFile('users.json', JSON.stringify(users, null, 4));
 }
 

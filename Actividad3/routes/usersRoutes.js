@@ -21,7 +21,6 @@ router.get('/users/:id', async (req, res, next) => {
         const user = await getUser(parseInt(req.params.id));
         if (user) {
             res.json(user);
-            console.log(user);
             // console.log('Usuario obtenido');
         } else {
             const error = new Error('Usuario no encontrado');
@@ -90,4 +89,4 @@ router.delete('/users/:id', async (req, res, next) => {
     }
 });
 
-module.exports = router;
+module.exports = router;

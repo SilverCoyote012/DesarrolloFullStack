@@ -1,0 +1,188 @@
+/* Estilos generales */
+#clearStorage {
+    padding: 10px 15px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1em;
+    color: #666;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Contenedor del producto */
+#productContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(100%/3 - 15px);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-text {
+    font-size: 1em;
+    color: #555;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.card-buttons button {
+    font-size: 0.9em;
+}
+
+.deleteProduct {
+    background-color: #f44336;
+}
+
+.deleteProduct:hover {
+    background-color: #e53935;
+}
+
+.editProduct {
+    background-color: #ffa500;
+}
+
+.editProduct:hover {
+    background-color: #ff8c00;
+}
+
+/* Estilos del modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+.modal h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.modal form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.modal form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.modal form button:hover {
+    background-color: #45a049;
+}
+
+#closeModal, #closeEditModal {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #007bff;
+    text-decoration: none;
+}
+
+#closeModal:hover, #closeEditModal:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor del botón crear producto */
+#createProductContainer {
+    text-align: center;
+    margin: 20px;
+}
+
+#createProductButton {
+    padding: 15px 25px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+#createProductButton:hover {
+    background-color: #45a049;
+}
+
+/* Estilos de los errores */
+#error, #editError {
+    color: red;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
